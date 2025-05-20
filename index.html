@@ -21,7 +21,7 @@
       const url = document.getElementById('url').value;
       const format = document.getElementById('format').value;
 
-      const response = await fetch('/download', {
+      const response = await fetch('https://media-downloader-backend-bzxw.onrender.com/download', {
         method: 'POST',
         body: new URLSearchParams({ url, format }),
       });
