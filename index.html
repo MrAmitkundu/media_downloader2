@@ -111,7 +111,7 @@
       statusDiv.textContent = 'Starting download...';
 
       progressInterval = setInterval(async () => {
-        const response = await fetch('http://127.0.0.1:5000/progress');
+        const response = await fetch('https://media-downloader-backend-bzxw.onrender.com/progress');
         const progress = await response.json();
         if (progress.status === 'downloading') {
           statusDiv.textContent = `Downloading... ${progress.percent.toFixed(1)}%`;
